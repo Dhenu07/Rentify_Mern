@@ -1,0 +1,47 @@
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* gap: 10px; */
+    min-height: 830px;
+    background-color: whitesmoke;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4em;
+}
+
+.explore-btn {
+    border: 1px solid #ef233c;
+    color: white;
+    background-color: #ef233c;
+    padding: 14px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    width: 10em;
+    margin-top: 20px;
+}
+
+.welcome {
+    font-size: 5em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.explore {
+    padding-top: 20px;
+    font-size: 3em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.rental {
+    mix-blend-mode:multiply ;
+    width: 47em;
+    height: 42em;
+}
+.right {
+    margin-left:7em;
+    margin-top: 60px;
+}

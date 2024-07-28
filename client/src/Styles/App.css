@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+  }
+.reveal {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.reveal.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.rev {
+    transform: translateX(-100px);
+    transition: all 2s ease;
+}
+
+.rev.active {
+    transform: translateX(0);
+}
+.revv {
+    transform: translateY(100px);
+    transition: all 3s ease;
+}
+
+.revv.active {
+    transform: translateY(0);
+    opacity: 1;
+}

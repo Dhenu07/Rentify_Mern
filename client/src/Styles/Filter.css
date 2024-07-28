@@ -1,0 +1,192 @@
+.rental-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
+    background-color: #edf2f4;
+    min-height: 910px;
+}
+.rental-filter{
+    text-align: start;
+    padding: 20px;
+    padding-left: 40px;
+}
+.shop-title{
+    padding-bottom: 30px;
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.filters>div {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content>div,
+.dropdown-content>input {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category,
+.price,
+.available,
+.numberOfBathrooms,
+.ageOfProperty,
+.amenities,
+.furnished,
+.area {
+    color: white;
+    background-color: #1d3557;
+}
+
+.drop-icon {
+    color: white;
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.category-item,
+.price-item,
+.available-item,
+.bathroom-item,
+.ageOfProperty-item,
+.amenities-item,
+.furnished-item,
+.area-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.checkbox-right {
+    margin-left: auto;
+}
+
+.filters>div.active .dropdown-content {
+    max-height: 300px;
+}
+
+.selected-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected {
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    display: inline;
+    margin-right: 4px;
+    background-color: #ff4d6d;
+    flex-shrink: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+
+
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  /* justify-content: space-between; */
+  z-index: -2;
+}
+
+.card-list {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-result {
+  width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.bag-icon {
+  color: #535353;
+  padding-left: 160px;
+}
+
+.card-list:hover {
+  transform: scale(1.05);
+}
+
+.link-to-more {
+  text-decoration: none;
+  color: black;
+}
+
+.explore-more-results {
+  display: flex;
+  flex-direction: row;
+}
+
+.explore-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.explore-more-results {
+  background-color: #ef476f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.explore-more-results:hover {
+  background-color: #fb6f92;
+}

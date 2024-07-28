@@ -1,0 +1,88 @@
+.product-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 910px;
+    overflow: hidden;
+}
+.product-left{
+    padding-left: 4em;
+    padding-top: 4em;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-right{
+    padding-top: 6em;
+}
+.product-imag{
+    width: 70%;
+    height: 70%;
+}
+.reveal,
+.rev,
+.revv {
+    transition: all 2s ease;
+}
+
+.reveal.active,
+.rev.active,
+.revv.active {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+.product-center{
+    padding: 6em 0;
+    display: flex;
+    justify-content: center;
+}
+.product-slider{
+    position: absolute;
+    left: 20%;
+    top: 135%;
+    width: 60%;
+}
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: red */
+}
+
+.slider-arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+.slider-arrow.left{
+    margin-top: 2.5em;
+}
+.slider-arrow.left,
+.slider-arrow.right {
+    background-color: coral;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.slider-arrow.left:hover,
+.slider-arrow.right:hover {
+    color: #ccc;
+}
+
+.slick-slider {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cardsi {
+    padding: 0 10px;
+}
+
+.card-img {
+    width: 90%;
+    height: 90%;
+}

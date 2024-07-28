@@ -1,0 +1,186 @@
+/* App.css or index.css */
+
+.header {
+    background-color: #7a8683b8;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 98%;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.icon {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.icon svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    color: #ff0000;
+}
+span {
+    font-size: 30px;
+    font-weight: bold;
+    font-family:cursive;
+}
+.navbar {
+    font-weight: 500;
+    font-size: 18px;
+    flex: 1;
+    display: flex;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    justify-content:space-between;
+    margin-left: 7em;
+    transition: margin-top 0.3s ease-in-out;
+}
+.search-bar{
+    width:30em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: white;
+    padding: 8px;
+}
+.search-bar-icon{
+    margin-right: 10px;
+}
+.nav-content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.search-bar input[type='search'] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    color: grey;
+}
+
+.search-bar input[type='search']::placeholder {
+    color: grey;
+}
+
+.search-bar input[type='search']:focus::placeholder {
+    color: transparent;
+}
+.user-properties{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.loginButton,.wishlist,.cart{
+    padding: 8px;
+}
+.login{
+    padding: 12px;
+    width: 6em;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e2ece9;
+    color: black
+}
+.wishlist{
+    margin-right: 15px;
+}
+.login:hover{
+    background-color: #c4e7d4;
+    color: darkcyan;
+}
+
+.profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 74px;
+    right: 0.5em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    width: 8%;
+    text-align: left; 
+}
+
+.profile {
+    padding-right: 20px;
+    padding-left: 1.6em;
+}
+
+.nav-link,
+.nav-link-items,
+.nav-link-details {
+    text-decoration: none;
+    color: #0d3b66;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link-details {
+    color: #0d3b66;
+    cursor: pointer;
+}
+.nav-link-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.divider {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 0;
+    margin:auto;
+}
+.nav-link-details svg {
+    margin-left: auto; 
+}
+.suggestions-container {
+    position: absolute;
+    top: 8%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30em;
+    margin-left: 8px;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.user-role{
+    padding-right: 15px;
+}
+.sell-opt{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid palevioletred;
+    background-color: pink;
+    color: navy;
+
+}

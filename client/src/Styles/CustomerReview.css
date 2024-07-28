@@ -1,0 +1,136 @@
+.review-container{
+    background-color: #1b2a41;
+    /* display: grid; */
+    /* grid-template-columns: 50% 50%; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 70vh;
+    overflow: hidden;
+}
+.review-left{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 20px;
+    padding-top: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+.review-right{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 15px;
+}
+
+.revv {
+    transform: translateY(100px);
+    transition: all 3s ease;
+}
+
+.revv.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.review-center{
+    padding: 8em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.review-slider{
+    position: absolute;
+    left: 20%;
+    top: 232%;
+    width: 60%;
+}
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slider-arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.slider-arrow.left,
+.slider-arrow.right {
+    background-color: coral;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.slider-arrow.left:hover,
+.slider-arrow.right:hover {
+    color: #ccc;
+}
+
+.slick-slider {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.review-cardsi{
+    padding: 0 10px;
+}
+
+.review-img{
+    width: 90%;
+    height: 90%;
+}
+.review-right-left{
+    height: 15em;
+    border-radius: 10px;
+    width: 30em;
+    margin-left: 18em;
+    background-color: #fefee3;
+    padding: 25px;
+}
+.review-right-right{
+    height: 15em;
+    border-radius: 10px;
+    background-color: #e2fdff;
+    margin-left: 5em;
+    margin-right: 18em;
+    padding: 25px;
+}
+.review-border{
+    border-top: 4px solid #ccc;
+    height: 6px;
+    width: 92%;
+    margin-top: 25em;
+    margin-left: 4em;
+}
+.right-header,.left-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-header-title,.left-header-title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+.right-head-img,.left-head-img{
+    width: 100px;
+    padding-top: 2em;
+    padding-right: 2em;
+}
+.right-content,.left-content{
+    padding: 2em;
+}
+.right-content-txt,.left-content-txt{
+    font-size: 23px;
+}
+.left-content-txt{
+    margin-top: 8px;
+}
