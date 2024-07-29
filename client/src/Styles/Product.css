@@ -1,7 +1,8 @@
 .product-container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50% 50%;
-    min-height: 910px;
+    min-height: 910px; */
+    
     overflow: hidden;
 }
 .product-left{
@@ -13,10 +14,12 @@
 
 .product-right{
     padding-top: 6em;
+    /* background-color: red; */
 }
 .product-imag{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
+    /* margin-right: 20px; */
 }
 .reveal,
 .rev,
@@ -38,7 +41,7 @@
 .product-slider{
     position: absolute;
     left: 20%;
-    top: 135%;
+    top: 145%;
     width: 60%;
 }
 .slider-arrows {
@@ -79,10 +82,13 @@
 }
 
 .cardsi {
+    display: flex;
     padding: 0 10px;
+    height: 25vh;
 }
 
 .card-img {
-    width: 90%;
-    height: 90%;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }

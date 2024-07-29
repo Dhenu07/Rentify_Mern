@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Styles/Product.css'
-import bg from '../Assets/bg.webp'
+import bg from '../Assets/rentbg.jpeg'
 function Products() {
     const sliderRef = useRef(null);
     useEffect(() => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-scroll'
 import '../Styles/Main.css'
-import bg from '../Assets/bg.webp'
+import bg from '../Assets/renty.jpg'
 export default function Main() {
     return (
         <div className="content">
