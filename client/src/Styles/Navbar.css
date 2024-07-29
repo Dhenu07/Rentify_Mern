@@ -89,15 +89,16 @@ span {
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    background-color: #e2ece9;
-    color: black
+    background-color: #FF0008;
+    color: black;
+   
 }
 .wishlist{
     margin-right: 15px;
 }
 .login:hover{
-    background-color: #c4e7d4;
-    color: darkcyan;
+    background-color: black;
+    color: #FF0008;
 }
 
 .profile-dropdown {
@@ -170,6 +171,9 @@ span {
 
 .user-role{
     padding-right: 15px;
+    font-size: 25px;
+    font-family:cursive;
+    font-weight: bold;
 }
 .sell-opt{
     padding-left: 15px;

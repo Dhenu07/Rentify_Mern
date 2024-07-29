@@ -8,15 +8,16 @@ function Profile() {
     const [user,setUser]=useState([]);
     const [orders,setOrders]=useState([]);
     const [products, setProducts] = useState([]);
+    const [name, setName] = useState('');
 
     useEffect(()=>{
         const getUserEmail = async() => {
             const token = localStorage.getItem('userId');
             const response=await axios.get(`http://localhost:4000/user/userEmail/${token}`);
-            // console.log(response.data);
+            console.log(response.data);
+            setName(response.data.name);
             setEmail(response.data.email);
         };
-
         getUserEmail();
     },[])
 
@@ -81,7 +82,7 @@ function Profile() {
                     <div className='profile-pic'></div>
                     <div className='profile-details-user'>
                         <div className='personal-details'>Personal Details:</div>
-                        <div className='profile-name'>Name: {user.username}</div>
+                        <div className='profile-name'>Name: {name}</div>
                         <div className='horizontal-divider'></div>
                         <div className='profile-email'>Email: {email}</div>
                         <div className='horizontal-divider'></div>

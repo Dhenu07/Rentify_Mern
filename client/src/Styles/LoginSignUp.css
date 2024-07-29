@@ -3,7 +3,9 @@ body {
 }
 
 .login-container {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
   top: 20%;
   left: 38%;
   width: 25em;
@@ -11,21 +13,24 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  height: 50vh;
+  height: fit-content;
   /* animation: zoomIn 2s ease-in-out forwards;
   transform-origin: center; */
 }
 
 .register-container {
-  position: absolute;
-  top: 12%;
-  left: 38%;
+  /* position: absolute; */
+  /* top: 12%;
+  left: 38%; */
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
   width: 25em;
   background-color: whitesmoke;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  height: 70vh;
+
 }
 
 .login-inputs,

@@ -92,7 +92,7 @@ function LoginSignUp() {
                 console.log(email);
                 localStorage.setItem('userId',_id);
                 if(role==='User'){
-                    navigate('/');
+                    navigate('/Welcome');
                 }
                 else if(role==='Seller'){
                     navigate('/');

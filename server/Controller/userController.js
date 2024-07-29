@@ -186,7 +186,7 @@ const UserController={
             if (!user) {
                 return res.status(404).json({ message: 'User not found' });
             }
-            res.status(200).json({ email: user.email });
+            res.status(200).json({ email: user.email,name: user.firstName });
         }
         catch(error){
             console.error("Error fetching user:", error);

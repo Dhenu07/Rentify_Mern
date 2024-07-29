@@ -7,6 +7,8 @@ import { IoPersonCircleSharp } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
 import { MdLogout } from 'react-icons/md';
 import '../Styles/Navbar.css'
+import Modal from './Modal';
+import LoginSignUp from './LoginSignUp';
 import axios from 'axios';
 const suggestions = [
     'Ariyalur', 'Chengalpattu', 'Chennai', 'Coimbatore', 'Cuddalore', 'Dharmapuri', 
@@ -25,21 +27,22 @@ export default function Navbar() {
     const [suggestedLocations, setSuggestedLocations] = useState([]);
     const [isProfileDropdownOpen, setProfileDropdownOpen] = useState(false);
     const [seller,setSeller]=useState(false);
-    // const [user,setUser]=useState(false);
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [user,setUser]=useState(false);
     const [name,setName] = useState('');
     useEffect(() => {
         const userId = localStorage.getItem('userId');
         console.log(userId);
         axios.get(`http://localhost:4000/auth/profile/${userId}`)
             .then(response => {
-                const { firstName, role } = response.data;
+                const { name, role } = response.data;
                 console.log(response.data)
                 if (role === 'Seller') {
                     setSeller(true);
-                    setName(firstName);
+                    setName(name);
                 } else if (role === 'User') {
-                    // setUser(true);
-                    setName(firstName);
+                    setUser(true);
+                    setName(name);
                 }
             })
             .catch(error => {
@@ -75,6 +78,15 @@ export default function Navbar() {
     const handleSeller=()=>{
         navigate('/stocks')
     }
+    const handleLoginOpen = () => {
+        setModalOpen(true);
+        document.body.classList.add('modal-open');
+    };
+
+    const handleLoginClose = () => {
+        setModalOpen(false);
+        document.body.classList.remove('modal-open');
+    };
 
     const handleLogout = () => {
         axios.post("http://localhost:4000/auth/logout")
@@ -146,12 +158,13 @@ export default function Navbar() {
                     </div>
                 ) : (
                     <div className='loginbutton'>
-                        <Link to='/loginregister' className='nav-link'>
-                            <button className='login'>LOGIN</button>
-                        </Link>
-                    </div>
+                    <button className='login' onClick={handleLoginOpen}>LOGIN</button>
+                </div>
                 )}
             </div>
+            <Modal isOpen={isModalOpen} onClose={handleLoginClose}>
+                <LoginSignUp/>
+            </Modal>
         </div>
     )
 }

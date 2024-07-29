@@ -481,7 +481,7 @@ function Filter(props) {
     return (
         <div className="rental-container">
             <div className="rental-filter">
-                <h2 className="shop-title">Shop By: {props.location}</h2>
+                <h2 className="shop-title">Search By: {props.location}</h2>
                 <div className="selected-list">
                     {selectedCategory.map((item) => (
                         <span key={item} className='selected'>{item}<IoClose className='close' onClick={() => deleteSelectedItem(item, selectedCategory, setSelectedCategory, 'category')} /></span>

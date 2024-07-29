@@ -35,6 +35,7 @@ function App() {
     }
     return (
         <Routes>
+            <Route index element={<Welcome />} />
             <Route path='/' element={<Welcome/>}/>
             <Route path='/searchResults' element={<SearchResults/>}/>
             <Route path='/loginRegister' element={<LoginSignUp/>}/>

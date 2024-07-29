@@ -4,9 +4,17 @@
     grid-gap: 10px;
     background-color: #edf2f4;
     min-height: 910px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 .rental-filter{
+    display: flex;
     text-align: start;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
     padding: 20px;
     padding-left: 40px;
 }
